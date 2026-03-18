@@ -18,7 +18,7 @@ const page = () => {
     <>
       <HeroSub
         title="Services"
-        description="Discover a wealth of insightful materials meticulously crafted to provide you with a comprehensive understanding of the latest trends."
+        description="End-to-end software engineering solutions designed to fit your business."
         breadcrumbLinks={breadcrumbLinks}
       />
       <Services/>

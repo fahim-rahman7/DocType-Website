@@ -34,7 +34,7 @@ const Services = () => {
             return (
               <div
                 key={index}
-                className="col-span-4 bg-white flex flex-col justify-between items-center text-center py-14 px-7 rounded-md gap-8 dark:bg-darkmode group"
+                className="col-span-4 bg-white flex flex-col justify-between items-center text-center py-14 px-7 rounded-md gap-8 dark:bg-darkmode group  dark:hover:bg-[#0a1f4d] hover:border-blue-200"
               >
                 <IconComponent className="text-4xl text-primary transition-colors duration-300 group-hover:text-blue-700" />
 
