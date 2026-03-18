@@ -1,4 +1,10 @@
 import { getImgPath } from "@/utils/image";
+import { FaCode, FaBullhorn, FaPaintBrush, FaMobileAlt } from "react-icons/fa";
+import { AiOutlineRobot } from "react-icons/ai";
+import { MdPalette, MdSpeed } from "react-icons/md";
+import { CiGlobe } from "react-icons/ci";
+import { LuBrain } from "react-icons/lu";
+
 
 export const menuItems = [
     { name: "Home", href: "#home" },
@@ -35,21 +41,36 @@ export const Progress = [
 
 export const Servicebox = [
     {
-        icon: getImgPath('/images/services/ux-design-product_1.svg'),
-        title: 'UX & Product Design',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        icon: CiGlobe,
+        title: 'Web Development',
+        description: 'Building scalable, fast, and responsive web applications powered by modern frameworks and clean development standards.',
     },
     {
-        icon: getImgPath('/images/services/perfomance-optimization.svg'),
+        icon: FaBullhorn,
+        title: 'Brand Marketing',
+        description: 'Creating strong brand identity and marketing strategies to grow your business.',
+    },
+    {
+        icon: MdPalette,
+        title: 'UI/UX Design',
+        description: 'Designing intuitive and engaging user experiences for web and mobile platforms.',
+    },
+    {
+        icon: FaMobileAlt,
+        title: 'Mobile Development',
+        description: 'Developing high-performance mobile apps for Android and iOS platforms.',
+    },
+    {
+        icon: LuBrain,
+        title: 'AI & Machine Learning',
+        description: 'Empowering businesses with intelligent, data-driven solutions crafted using advanced AI and machine learning.',
+    },
+    {
+        icon: MdSpeed,
         title: 'Performance Optimization',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        description: 'Improving speed, efficiency, and scalability of your applications.',
     },
-    {
-        icon: getImgPath('/images/services/ux-design-product_2.svg'),
-        title: 'UX & Products Design',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-]
+];
 
 export const portfolioinfo = [
     {
