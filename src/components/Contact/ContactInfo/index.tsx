@@ -82,7 +82,7 @@ const ContactInfo = () => {
               className='rounded-lg w-full'></iframe>
           </div> */}
         </div>
-        <div className='border-b border-solid border-border dark:border-dark_border pb-20'></div>
+        
       </section>
     </>
   )

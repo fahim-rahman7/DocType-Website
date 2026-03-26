@@ -83,7 +83,7 @@ const Header: React.FC = () => {
           ? 'shadow-lg bg-white dark:shadow-dark-md dark:bg-darklight!'
           : 'shadow-none'
       }`}>
-      <div className='container mx-auto max-w-6xl flex items-center justify-between p-6'>
+      <div className='container mx-auto max-w-6xl flex items-center justify-between h-full px-6'>
         <Logo />
         <nav className='hidden lg:flex grow items-center justify-center gap-6'>
           {headerData.map((item, index) => (

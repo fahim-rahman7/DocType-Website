@@ -5,7 +5,6 @@ import Counter from '@/components/Home/Counter'
 import Progresswork from '@/components/Home/WorkProgress';
 import Services from '@/components/Home/Services';
 import Portfolio from '@/components/SharedComponent/portfollio'
-import Testimonial from '@/components/SharedComponent/Testimonial'
 import Contactform from '@/components/Home/Contact';
 export const metadata: Metadata = {
   title: "Venus",
@@ -19,7 +18,6 @@ export default function Home() {
       <Progresswork isColorMode={false} />
       <Services />
       <Portfolio />
-      <Testimonial />
       <Contactform />
     </main>
   )

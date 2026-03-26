@@ -46,7 +46,7 @@ const Services = () => {
                   {item.description}
                 </p>
 
-                <Link
+                {/* <Link
                   href="#"
                   className="text-lg font-medium text-primary flex items-center"
                 >
@@ -54,7 +54,7 @@ const Services = () => {
                   <span>
                     <Icon icon="ei:chevron-right" width="30" height="30" />
                   </span>
-                </Link>
+                </Link> */}
               </div>
             );
           })}

@@ -8,7 +8,7 @@ const Logo = () => {
       <Image
         src="/images/logo/Logo-white.png"
         alt="logo"
-        width={70}
+        width={80}
         height={20}
         className="dark:hidden"
         priority
@@ -18,7 +18,7 @@ const Logo = () => {
       <Image
         src="/images/logo/Logo-Dark.png"
         alt="logo white"
-        width={70}
+        width={80}
         height={20}
         className="hidden dark:block"
         priority
