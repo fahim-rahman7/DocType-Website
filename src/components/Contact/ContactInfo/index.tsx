@@ -49,8 +49,7 @@ const ContactInfo = () => {
                     Careers
                   </span>
                   <p className='text-DeepOcean font-normal text-lg max-w-80 pt-3 pb-7 dark:text-white/50'>
-                    Sit ac ipsum leo lorem magna nunc mattis maecenas non
-                    vestibulum
+                  We're looking for talented individuals who are passionate about technology and innovation. Join us in shaping the future.
                   </p>
                 </div>
                 <div>
