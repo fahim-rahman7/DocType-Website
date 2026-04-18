@@ -5,36 +5,31 @@ import Footer from "@/components/Layout/Footer";
 import { ThemeProvider } from "next-themes";
 import Aoscompo from "@/utils/aos";
 import NextTopLoader from "nextjs-toploader";
-import SessionProviderComp from "@/components/nextauth/SessionProvider";
-import { AuthDialogProvider } from "./context/AuthDialogContext";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
-  session,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-  session: any;
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <NextTopLoader />
-        <AuthDialogProvider>
-          <SessionProviderComp session={session}>
-            <ThemeProvider
-              attribute="class"
-              enableSystem={true}
-              defaultTheme="system"
-            >
-              <Aoscompo>
-                <Header />
-                {children}
-                <Footer />
-              </Aoscompo>
-            </ThemeProvider>
-          </SessionProviderComp>
-        </AuthDialogProvider>
+
+        <ThemeProvider
+          attribute="class"
+          enableSystem={true}
+          defaultTheme="system"
+        >
+          <Aoscompo>
+            <Header />
+            {children}
+            <Footer />
+          </Aoscompo>
+        </ThemeProvider>
+
       </body>
     </html>
   );
