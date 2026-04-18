@@ -3,6 +3,10 @@
 import React from "react";
 import { FaLightbulb, FaCheckCircle, FaChartLine } from "react-icons/fa";
 
+type ProgressworkProps = {
+  isColorMode: boolean;
+};
+
 const features = [
   {
     title: "Innovation",
@@ -21,11 +25,16 @@ const features = [
   },
 ];
 
-const Progresswork = () => {
+const Progresswork: React.FC<ProgressworkProps> = ({ isColorMode }) => {
   return (
-    <section className="py-20 bg-white dark:bg-darklight bg-cover">
+    <section
+      className={`py-20 ${
+        isColorMode
+          ? "bg-white dark:bg-darklight"
+          : "bg-white dark:bg-darkmode"
+      } bg-cover`}
+    >
       <div className="container mx-auto max-w-6xl px-4">
-
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-black dark:text-white">
@@ -43,31 +52,27 @@ const Progresswork = () => {
 
             return (
               <div
-              key={index}
-              className="group p-8 rounded-2xl bg-gray-50 dark:bg-[#081738] text-center
-              shadow-md transition-all duration-300 border border-transparent
-              hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer
-              hover:bg-blue-50 dark:hover:bg-[#0a1f4d] hover:border-blue-200"
-            >
-              {/* Icon */}
-              <div className="flex justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
-                <Icon className="text-4xl text-primary transition-colors duration-300 group-hover:text-blue-600" />
+                key={index}
+                className="group p-8 rounded-2xl bg-gray-50 dark:bg-[#081738] text-center
+                shadow-md transition-all duration-300 border border-transparent
+                hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer
+                hover:bg-blue-50 dark:hover:bg-[#0a1f4d] hover:border-blue-200"
+              >
+                <div className="flex justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
+                  <Icon className="text-4xl text-primary transition-colors duration-300 group-hover:text-blue-600" />
+                </div>
+
+                <h3 className="text-xl font-semibold mb-3 text-black dark:text-white">
+                  {item.title}
+                </h3>
+
+                <p className="text-gray-500 text-sm">
+                  {item.description}
+                </p>
               </div>
-            
-              {/* Title */}
-              <h3 className="text-xl font-semibold mb-3 text-black dark:text-white">
-                {item.title}
-              </h3>
-            
-              {/* Description */}
-              <p className="text-gray-500 text-sm">
-                {item.description}
-              </p>
-            </div>
             );
           })}
         </div>
-
       </div>
     </section>
   );
